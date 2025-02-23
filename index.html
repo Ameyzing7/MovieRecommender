@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Recommendation System</h1>
+        <label for="category">Choose a category:</label>
+        <select id="category">
+            <option value="">--Select a category--</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="animation">Animation</option>
+            <option value="documentary">Documentary</option>
+            <option value="fantasy">Fantasy</option>
+        </select>
+        <button onclick="recommendMovie()">Get Recommendation</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
